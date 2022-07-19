@@ -1,7 +1,7 @@
-const Messages = () => {
+const Messages = ({ message }) => {
   return (
     <div className="message">
-      <p>Choose the one that applies to you:</p>
+      <p>{message}</p>
     </div>
   );
 };

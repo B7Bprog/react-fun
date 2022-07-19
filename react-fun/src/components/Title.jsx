@@ -1,7 +1,7 @@
 const Title = () => {
   return (
     <>
-      <h1>A single source of truth</h1>
+      <h1>'A single source of truth'</h1>
     </>
   );
 };
