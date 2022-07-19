@@ -1,0 +1,12 @@
+.input {
+}
+#inputField {
+  background-color: rgb(89, 200, 228);
+  box-shadow: 5px 5px 5px;
+}
+#submitButton {
+  margin: 5px;
+  background-color: rgb(89, 200, 228);
+  box-shadow: 5px 5px 5px;
+  cursor: pointer;
+}

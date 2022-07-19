@@ -1,8 +1,13 @@
 .button_div {
-  background-color: #4caf50; /* Green */
+  background-color: #9fe321; /* Green */
   display: flex;
   justify-content: space-around;
+  padding: 5px;
+  margin: 2px;
+  border: 3px dotted rgb(60, 48, 153);
 }
+
+/*background-color: #4caf50; */
 
 #b1 {
   background-color: #676880;

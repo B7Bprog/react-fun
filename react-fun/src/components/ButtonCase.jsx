@@ -1,5 +1,5 @@
 import { useState } from "react";
-import styles from "./ButtonCase.module.css";
+import styles from "../styles/ButtonCase.module.css";
 
 const ButtonCase = ({ setMessage, setAnswer }) => {
   const [b1Text, setB1Text] = useState("I'm stupid");

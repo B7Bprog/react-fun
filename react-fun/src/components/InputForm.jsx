@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import styles from "../styles/InputForm.module.css";
 export default function Input({ setTownQuery, setErrorState }) {
   const [town, setTown] = useState("");
   const handleSubmit = (event) => {
@@ -10,9 +10,10 @@ export default function Input({ setTownQuery, setErrorState }) {
     setTown("");
   };
   return (
-    <div className="input">
+    <div className={styles.input}>
       <form onSubmit={handleSubmit}>
         <input
+          id={styles.inputField}
           type="text"
           name="town"
           value={town}
@@ -21,7 +22,9 @@ export default function Input({ setTownQuery, setErrorState }) {
           }}
           placeholder="Enter your town here"
         ></input>
-        <button type="submit">Search</button>
+        <button id={styles.submitButton} type="submit">
+          Search
+        </button>
       </form>
     </div>
   );
