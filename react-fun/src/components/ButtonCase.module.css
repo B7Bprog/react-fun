@@ -1,0 +1,23 @@
+.button_div {
+  background-color: #4caf50; /* Green */
+  display: flex;
+  justify-content: space-around;
+}
+
+#b1 {
+  background-color: #676880;
+  color: white;
+  cursor: pointer;
+}
+
+#b2 {
+  background-color: #676880;
+  color: white;
+  cursor: pointer;
+}
+
+#reset {
+  background-color: #676880;
+  color: #4d1394;
+  cursor: pointer;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import styles from "./ButtonCase.module.css";
 
 const ButtonCase = ({ setMessage, setAnswer }) => {
   const [b1Text, setB1Text] = useState("I'm stupid");
@@ -35,21 +36,31 @@ const ButtonCase = ({ setMessage, setAnswer }) => {
   };
 
   const resetMessage = () => {
-    setMessage("Choose the one that applies to you:");
+    setMessage("Choose the one that best describes you:");
     setAnswer("");
   };
 
   return (
-    <div className="buttonCase">
-      <button id="b1" onMouseOver={handleButton1} onClick={handleClickB1}>
+    <div className={styles.button_div}>
+      <button
+        id={styles.b1}
+        onMouseOver={handleButton1}
+        onClick={handleClickB1}
+      >
         {b1Text}
       </button>
 
-      <button id="b2" onMouseOver={handleButton2} onClick={handleClickB2}>
+      <button
+        id={styles.b2}
+        onMouseOver={handleButton2}
+        onClick={handleClickB2}
+      >
         {b2Text}
       </button>
       <div>
-        <button onClick={resetMessage}>Reset</button>
+        <button id={styles.reset} onClick={resetMessage}>
+          Reset
+        </button>
       </div>
     </div>
   );

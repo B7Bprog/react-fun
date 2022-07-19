@@ -1,0 +1,8 @@
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(111, 203, 231);
+  box-shadow: 1vw 1vw;
+  text-shadow: 2px 2px 5px #505d61;
+}

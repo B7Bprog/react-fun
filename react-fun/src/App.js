@@ -8,7 +8,9 @@ import { useState } from "react";
 import Answer from "./components/Answer";
 
 function App() {
-  const [message, setMessage] = useState("Choose the one that applies to you:");
+  const [message, setMessage] = useState(
+    "Choose the one that best describes you:"
+  );
   const [answer, setAnswer] = useState("");
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
       <Messages message={message} />
       <ButtonCase setMessage={setMessage} setAnswer={setAnswer} />
       <Temp />
+      <img src={logo} alt="logo" className="App-logo"></img>
     </div>
   );
 }
